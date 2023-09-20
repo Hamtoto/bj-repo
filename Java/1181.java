@@ -31,20 +31,19 @@ class WordSort {
 
     public static void main(String args[]) throws IOException
     {        
-        String[][] str = null;
+        String[][] arr = null;
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int line = Integer.parseInt(br.readLine());
         
-        str = new String[line][2];
+        arr = new String[line][2];
         
-       // for(int i = 0; i < line; i++){
-        //    str[i][0] = br.readLine();
-        //    str[i][1] = Integer.toString(str[i][0].length());
-        //}
+        for(int i = 0; i < line; i++){
+            arr[i][0] = br.readLine();
+            arr[i][1] = Integer.toString(arr[i][0].length());
+        }
 
-        int[] arr= {7,4,2,8,3,5,1,6,10,9};
-        quickSort(arr,0,arr.length-1);
+        quickSort(arr,0,line-1);
         
         for(int i=0;i<arr.length;i++) {
             System.out.print(arr[i]+",");
