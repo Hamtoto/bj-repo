@@ -1,1 +1,2 @@
-# acmicpc problem solved upload repo
+# bj-repo
+Acmicpc problem solved upload repo
